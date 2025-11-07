@@ -19,7 +19,7 @@ describe('Redirect middleware', () => {
 
   beforeAll(() => {
     const middleware = [redirect];
-    const mockStoreCreator = configureMockStore<State, AnyAction>(middleware);
+    const mockStoreCreator = configureMockStore<any, AnyAction>(middleware);
     store = mockStoreCreator();
   });
 
